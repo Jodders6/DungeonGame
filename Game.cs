@@ -21,7 +21,8 @@ namespace DungeonExplorer
             rooms = new Dictionary<string, Room> // The rooms dictionary containing the two rooms with their description. This can be called by the player at any time.
             {
                 {"Room A", new Room("A small square room, a few barrels littered around with some rat-like noises from the dark corners.", "Room B") },
-                {"Room B", new Room("A larger rectangle-shaped room. This one is laden with scrap and junk.", null) }
+                {"Room B", new Room("A larger rectangle-shaped room. This one is laden with scrap and junk. Amongst the rubble you can see a small shining key.", "Room C") },
+                {"Room C", new Room("An elongated corridoor that ends abruptly in a doorway.", null) }
             };
 
             currentRoom = rooms["Room A"]; // Starts the player in Room A.
